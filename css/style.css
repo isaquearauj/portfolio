@@ -200,6 +200,14 @@ span {
     transform: translateY(-4px);
 }
 
+footer {
+    color: var(--second-text-color);
+    background-color: var(--second-bg-color);
+    text-align: center;
+    padding: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
 .navbar {
     transition: all .45s ease;
 }
