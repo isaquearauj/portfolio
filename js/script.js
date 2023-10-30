@@ -15,14 +15,12 @@ function scrollToSection(event) {
     const href = this.getAttribute('href')
     const section = document.querySelector(href)
     const sectionTop = section.getBoundingClientRect().top
-    const positionToScroll = sectionTop + window.pageYOffset - 100
+    const positionToScroll = sectionTop + window.scrollY - 100
 
     window.scroll({
         top: positionToScroll,
         behavior: 'smooth'
     })
-
-    console.log("entrou")
 }
 
 internalLinks.forEach((link) => {
@@ -39,7 +37,7 @@ window.addEventListener("scroll", () => {
     }
 })
 
-btnTop.addEventListener("click", () => {
+btnTop.addEventListener("click", (event) => {
     event.preventDefault();
     window.scrollTo({top: 0, behavior: 'smooth'});
 })

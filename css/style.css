@@ -212,7 +212,7 @@ footer {
     transition: all .45s ease;
 }
 
-.active {
+.navbar.active {
     background-color: black;
 }
 
